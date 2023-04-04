@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.441756cb.css",
+    "main.js": "/static/js/main.050685c3.js",
+    "static/js/787.cb4be3de.chunk.js": "/static/js/787.cb4be3de.chunk.js",
+    "static/media/fraazo.png": "/static/media/fraazo.56d25b6ef39f348586a2.png",
+    "static/media/ApploImg.png": "/static/media/ApploImg.c88f06f38cc8d9ab8482.png",
+    "static/media/bestBuy.png": "/static/media/bestBuy.c5b7e3800fc1ff68e4a2.png",
+    "static/media/saurabhprofile.png": "/static/media/saurabhprofile.ac0b5a5e75804d8687c6.png",
+    "static/media/programmer.png": "/static/media/programmer.ba704ff77e39094aa378.png",
+    "static/media/create-react-app.svg": "/static/media/create-react-app.557dcd9a4b161f2097a887c6cd455f04.svg",
+    "static/media/mongodb.svg": "/static/media/mongodb.153b7b440efa05666029a47da0d0baa0.svg",
+    "static/media/express.svg": "/static/media/express.7e85c5130978e3593e65a44112bc7390.svg",
+    "static/media/visual-studio-code.svg": "/static/media/visual-studio-code.f57bbf46dad2409e508cb50781867a39.svg",
+    "static/media/nodejs-icon.svg": "/static/media/nodejs-icon.3dc364b8e9beb3561620274aea4f0844.svg",
+    "static/media/redux.svg": "/static/media/redux.a95675408ae17c456965e2f09376c31a.svg",
+    "static/media/html-5.svg": "/static/media/html-5.e7638e3676622c76a46ece6c46136fd4.svg",
+    "static/media/css-3.svg": "/static/media/css-3.e7a9de36d9335d92932e93eb3b32deb9.svg",
+    "static/media/git-icon.svg": "/static/media/git-icon.fd381642a8b14fec88b8d6df1ff25220.svg",
+    "static/media/javascript.svg": "/static/media/javascript.fd46ca41839433d73577989d86eb2fe2.svg",
+    "static/media/npm.svg": "/static/media/npm.4ae99ecf9272452adda8c8ef1841f760.svg",
+    "static/media/material-ui.svg": "/static/media/material-ui.741a52f5f54e0b6073e48671571738ea.svg",
+    "index.html": "/index.html",
+    "main.441756cb.css.map": "/static/css/main.441756cb.css.map",
+    "main.050685c3.js.map": "/static/js/main.050685c3.js.map",
+    "787.cb4be3de.chunk.js.map": "/static/js/787.cb4be3de.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.441756cb.css",
+    "static/js/main.050685c3.js"
+  ]
+}
