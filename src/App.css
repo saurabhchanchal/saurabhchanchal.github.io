@@ -1,38 +1,518 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+html{
+  scroll-behavior: smooth;
+   
+}
+  .techImg:hover{
+   transform: scale(1.1);
+   transition: 0.5s;
+ }
+ .projs:hover{
+  transform: scale(1.1);
+  transition: .5s;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App{
+  background-color: rgb(54, 52, 52);
+  min-height: 100vh;
+}
+/* nav component */
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1.3rem;
+  color: #ffff;
+  font-size: 1.5rem;
+  z-index: 100;
+}
+ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+li, .logo{
+  margin: 0.5rem;
+  cursor: pointer;
+}
+.menu{
+  display: flex;
+}
+.socials{
+  margin-left: 1.3rem;
+  background-color: grey;
+  padding: 3px 30px;
+  border-radius: 20px;
+
+}
+.links, a{
+  color: #fff;
+  text-decoration: none;
+}
+.links:hover{
+  color: #7ee8fa;
+}
+.links:focus{
+  color: #7ee8fa;
+}
+.resume{
+  margin-top: 0;
+  padding: 0.2rem;
+  border: 1px solid #75b3be;
+  width: 40%;
+  text-align: center;
+  border-radius: 5px;
+  color: #7ee8fa;
+}
+
+/* home component */
+.home{
+  color: #ffff;
+  display: flex;
+  justify-content: space-between;
+  z-index: 0;
+  min-height: 100vh;
+}
+.main{
+  margin: 20vh 0 0 5rem;;
+  z-index: 80;
+}
+.image{
+  z-index: 0;
+  position: absolute;
+  right: 0;
+  bottom: 10vh;
+  width: 50%;
+  object-fit: contain;
+}
+.intro .text, .intro2 .text, .Bottom .free .txthead, .techstacks .intro, .aboutmeintro, .contsmes{
+  font-family: 'Lobster Two', cursive;
+  font-size: 4rem;
+  color: #fff;
+  background-color: #eec0c6;
+ background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.contsmes{
+  font-size: 30px;
+}
+.intro2 .text, .contsmes{
+  background-image: radial-gradient( circle 780.6px at 10% 20%,  rgba(133,255,189,1) 0%, rgba(255,251,125,1) 90.7% );
+}
+.tagline{
+  margin-top: 1.3rem;
+  color: rgb(168, 158, 158);
+  font-size: 1.2rem;
+}
+.button{
+  margin-top: 1.4rem;
+  padding: 0.8rem;
+  border: 1px solid #75b3be;
+  width: 40%;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.button:hover{
+  background-color: #2d3638c2;
+  transition: all 0.3s ease-in-out;
+}
+.button a{
+  color: #75b3be;
+}
+/* mobile */
+.mobile-menu{
+  display: none;
+}
+
+/* about component */
+.About{
+  margin: 10vh 5vh;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+}
+.imageme img{
+  object-fit: contain;
+  border-radius: 8px;
+}
+.abouttext{
+  margin: 0 3rem;
+}
+.aboutmeintro{
+  margin: 0 5vh;
+  color: white;
+  font-size: 3rem;
+  font-family: 'Lobster Two', cursive;
+}
+.abouttext .headtext{
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+.abouttext .details, .abouttext .more{
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+.Tech{
+  color: #fff;
+  min-height: 50vh;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+.techstacks .intro{
+  margin-bottom: 1rem;
+  font-size: 3rem;
+}
+.techstacks .techs{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  
+}
+.techstacks .techs .row div{
+  line-height: 1.4rem;
+  font-size: 1rem;
+}
+
+/* bottomabout */
+.Bottom{
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.Bottom .free .txthead{
+  font-size: 4.5rem;
+  margin-bottom: 1rem;
+}
+.Bottom .free .txt{
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+.Bottom .free .txt a{
+  text-decoration: underline #eec0c6 4px;
+}
+
+/* project */
+.Project{
+  font-size: 2rem;
+  color: #fff;
+}
+.Project .head{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.Project .head .projectsIntro{
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+.Project .container{
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+.Project .container .projs{
+  margin: 2rem 3rem;
+  padding-bottom: 1rem;
+  border-radius: 6px;
+  box-shadow: 3px 3px 10px #383737d5;
+}
+.Project .container .projs img{
+  object-fit: contain;
+  width: 100%;
+}
+.Project .container .projs .title{
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+.Project .container .projs .projinfo{
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  padding: 0.2rem 0.5rem;
+}
+.Project a{
+  margin: 0.6rem;
+  border: 1px solid #75b3be;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+.Project a:hover{
+  background-color: #75b3be;
+  transition: all 0.5s ease;
+}
+.Project .moreprojs{
+  font-size: 1.5rem;
+  text-align: center;
+  color: grey;
+  margin: 1rem;
+  line-height: 2;
+}
+/* conatcts */
+.Contact{
+  color: #fff;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.contactimg img{
+  height: 350px;
+  width: 350px;
+  border-radius: 13px;
+  object-fit: cover;
+}
+.name, .prof{
+  text-align: center;
+}
+.name{
+  font-weight: 800;
+}
+.prof{
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.conlinks{
+  display: flex;
+}
+.conlinks div{
+  margin: 5px;
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+.conlinks div a{
+  color: rgb(0, 204, 255);
+  text-decoration: underline;
+}
+
+/* form */
+form{
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.labels{
+  display: flex;
+  justify-content: space-around;
+}
+label{
+  font-size: 20px;
+}
+form input, form label, form button{
+  margin-bottom: 10px;
+}
+form input{
+  border: 2px solid gray;
+  color: white;
+  border-radius: 10px;
+  padding: 0.5rem;
+  font-size: 18px;
+  background: transparent;
+  margin: 0 10px;
+}
+form input:focus{
+  border-color: #7ee8fa;
+}
+textarea{
+  color: #fff;
+  background: none;
+  font-size: 16px;
+  padding: 0.6rem;
+  margin-top: 1rem;
+  border: 2px solid gray;
+  width: 30rem;
+  height: 10rem;
+}
+form button{
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  background-image: radial-gradient( circle 780.6px at 10% 20%,  rgba(133,255,189,1) 0%, rgba(255,251,125,1) 90.7% );;
+  width: 20rem;
+  color: black;
+}
+.center{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* blog */
+.blogs{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+.blogs .container{
+  width: 400px;
+  margin: 1rem;
+}
+.blogs .container .text-container{
+  background-color: grey;
   color: white;
+  padding: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.blogs .container .text-container .title{
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.blogs .container .text-container .desc{
+  margin-bottom: 0.7rem;
+}
+.blogs .container .text-container .autcal{
+  color: rgb(255, 215, 215);
+}
+.blogs .container img{
+  border-start-start-radius: 20px;
+  border-start-end-radius: 20px;
+  width: 400px;
+  height: 300px;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+/* media queries for nav and home components */
+@media screen and (max-width: 600px) {
+  /* navbar */
+  .navbar{
+    padding: 0.5rem;
+  }
+ 
+  .menu{
+    width: 80%;
+    height: 100vh;
+    position: absolute;
+    left: -100%;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+    flex-direction: column;
+  }
+  .menu .navvs{
+    display: block;
+    text-align: center;
+  }
+  .menu .navvs li{
+    margin: 3rem;
+  }
+  .menu.active{
+    background-color: #111;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease-in;
+    z-index: 100;
+    align-content: center;
+  }
+  .mobile-menu{
+    display: block;
+  }
+  /* home */
+  .home{
+    min-height: 100vh;
+  }
+  .intro .text, .intro2 .text{
+    font-size: 2.5rem;
+  }
+  .intro{
+    width: 300px;
+  }
+  .main{
+    margin: 10vh 0 0 2rem
+  }
+  .image{
+    width: 100%;
+  }
+  /* about */
+  .About{
+    display: block;
+    margin: 5vh 1vh;
+  }
+  
+  .imageme >img{
+    width: 100%;
+
+    border-radius: 8px;
+  }
+
+  .abouttext{
+    margin: 0 2rem;
+  }
+  .abouttext .techstacks .techs{
+    width: 100%;
+  }
+  .button{
+    padding: 0.7rem;
+  }
+  /* Project */
+  .Project .container{
+    display: block;
+  }
+  .Project .head .projectsIntro{
+    text-align: center;
+  }
+  textarea{
+    width: 19rem;
+  }
+  .Tech >.techstacks>.techs{
+    grid-template-columns: repeat(1,1fr);
+    /* align-content: space-around; */
+    /* justify-content: center; */
+    margin-left: 15px;
+  }
+ 
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.techs>.techImg{
+  width: 150px;
+  height: 150px;
+  padding: 5px;
+  margin-bottom: 40px;
+  border-radius: 20px;
+  background-color: white;
+  
+}
+ /* #techs> .techImg{
+  width: 100%;
+  border-radius: 30px;
+} */
+.techImg > img{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.techImg > p{
+  text-align: center;
+  font-size: 19px;
+  font-family: sans-serif;
+  margin-top: 5px;
+}
+.flex{
+  display: flex;
+}
+.edu{
+  font-family: sans-serif;
+  width:35%;
+  
+  line-height: 10px;
+}
+
+.edu>p:nth-child(1){
+  font-size: 20px;
+  line-height: 25px;
 }
