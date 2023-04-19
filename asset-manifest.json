@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.441756cb.css",
-    "main.js": "/static/js/main.050685c3.js",
+    "main.css": "/static/css/main.e0bfa273.css",
+    "main.js": "/static/js/main.6daa305f.js",
     "static/js/787.cb4be3de.chunk.js": "/static/js/787.cb4be3de.chunk.js",
-    "static/media/fraazo.png": "/static/media/fraazo.56d25b6ef39f348586a2.png",
+    "static/media/MasaiPlatform.png": "/static/media/MasaiPlatform.c8d0a35d2b7ff8fffe34.png",
     "static/media/ApploImg.png": "/static/media/ApploImg.c88f06f38cc8d9ab8482.png",
     "static/media/bestBuy.png": "/static/media/bestBuy.c5b7e3800fc1ff68e4a2.png",
     "static/media/saurabhprofile.png": "/static/media/saurabhprofile.ac0b5a5e75804d8687c6.png",
+    "static/media/Gradigi.png": "/static/media/Gradigi.52bb6d52e0d088ae83e2.png",
     "static/media/programmer.png": "/static/media/programmer.ba704ff77e39094aa378.png",
     "static/media/create-react-app.svg": "/static/media/create-react-app.557dcd9a4b161f2097a887c6cd455f04.svg",
     "static/media/mongodb.svg": "/static/media/mongodb.153b7b440efa05666029a47da0d0baa0.svg",
@@ -21,12 +22,12 @@
     "static/media/npm.svg": "/static/media/npm.4ae99ecf9272452adda8c8ef1841f760.svg",
     "static/media/material-ui.svg": "/static/media/material-ui.741a52f5f54e0b6073e48671571738ea.svg",
     "index.html": "/index.html",
-    "main.441756cb.css.map": "/static/css/main.441756cb.css.map",
-    "main.050685c3.js.map": "/static/js/main.050685c3.js.map",
+    "main.e0bfa273.css.map": "/static/css/main.e0bfa273.css.map",
+    "main.6daa305f.js.map": "/static/js/main.6daa305f.js.map",
     "787.cb4be3de.chunk.js.map": "/static/js/787.cb4be3de.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.441756cb.css",
-    "static/js/main.050685c3.js"
+    "static/css/main.e0bfa273.css",
+    "static/js/main.6daa305f.js"
   ]
 }
