@@ -1,53 +1,72 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
   FaGithubSquare,
   FaLinkedin,
-  // FaTwitterSquare,
-  //dagde
   FaEnvelope,
   FaTimes,
   FaBars,
-} from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+} from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Nav() {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
 
+  const downloadResume = () => {
+    const downloadLink = document.createElement("a");
+    downloadLink.href = "https://drive.google.com/file/d/17-aIEy7eq4slHfBBSnvzY4C80CXEMLVw/view?usp=sharing";
+    downloadLink.download = "Saurabha_Rai_Resume.pdf";
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
+    };
+
   return (
     <div className="navbar">
-      <Link to='/'>
-      <div className="logo">{'<Saurabha/>'}</div>
+      <Link to="/">
+        <div className="logo">{"<Saurabha/>"}</div>
       </Link>
-      <div className={click ? 'menu active' : 'menu'}>
+      <div className={click ? "menu active" : "menu"}>
         <ul className="navvs">
-          <li onClick={closeMobileMenu}><a href="#aboutDiv"> About</a></li>
-          <li onClick={closeMobileMenu}><a href="#techStack">Skills</a> </li>
-          <li onClick={closeMobileMenu}><a href="#projectDiv">Projects</a> </li>
+          <li onClick={closeMobileMenu}>
+            <a href="#aboutDiv"> About</a>
+          </li>
+          <li onClick={closeMobileMenu}>
+            <a href="#techStack">Skills</a>{" "}
+          </li>
+          <li onClick={closeMobileMenu}>
+            <a href="#projectDiv">Projects</a>{" "}
+          </li>
 
-          <li onClick={closeMobileMenu}> <a href="#bottom">Contact</a> </li>
+          <li onClick={closeMobileMenu}>
+            {" "}
+            <a href="#bottom">Contact</a>{" "}
+          </li>
 
-          <li className="navvs" onClick={closeMobileMenu}>
-            <a target="_blank" rel="noreferrer" href={"https://drive.google.com/file/d/17-aIEy7eq4slHfBBSnvzY4C80CXEMLVw/view?usp=sharing"}>
+          <li className="navvs" onClick={() => { closeMobileMenu(); downloadResume(); }}>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href={
+                "https://drive.google.com/file/d/17-aIEy7eq4slHfBBSnvzY4C80CXEMLVw/view?usp=sharing"
+              }
+            >
               Resume
             </a>
           </li>
         </ul>
         <div className="socials">
           <ul>
-            <li className="resumes" onClick={closeMobileMenu}>
-              {/* <Link to='/blog'>
-                <div>Blogs</div>
-              </Link> */}
-            </li>
+            <li className="resumes" onClick={closeMobileMenu}></li>
             <li onClick={closeMobileMenu}>
-              <a title='saurabh100rab69@gmail.com'
+              <a
+                title="saurabh100rab69@gmail.com"
                 target="_blank"
                 rel="noreferrer"
                 href="mailto:saurabh100rab69@gmail.com"
               >
-                <FaEnvelope />{' '}
+                <FaEnvelope />{" "}
               </a>
             </li>
             <li onClick={closeMobileMenu}>
@@ -68,7 +87,6 @@ function Nav() {
                 <FaLinkedin />
               </a>
             </li>
-          
           </ul>
         </div>
       </div>
@@ -80,4 +98,3 @@ function Nav() {
 }
 
 export default Nav;
-// menu

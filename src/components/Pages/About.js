@@ -1,5 +1,4 @@
 import React from "react";
-//import profile from "../images/ProfileImg.jpeg"
 import profile from "../images/saurabhprofile.png";
 
 function About() {
@@ -11,33 +10,36 @@ function About() {
       <div className="About">
         <div className="abouttext">
           <div className="headtext">
-            I'm Saurbha Kumar Rai,
+            I'm Saurabha Kumar Rai,
             <div>A Full Stack MERN Developer</div>
           </div>
           <div className="details">
-            I am currently learning Full Stack Web development at Masai School.
-            I'm passionate about programming and everything technology and have
-            endeavored to be upto date with the current technologies and skills.
+            A highly dedicated and passionate full-stack web developer with
+            excellent administrative and communication skills and the ability to
+            write efficient code. Looking forward to an exciting opportunity in
+            a challenging role as a full-stack developer.
           </div>
           <div className="more">
             I have expertise in HTML, CSS, and JavaScript. Additionally, I have
-            experience and considerable knowledge about ES6, Express, Node, NPM,
-            MongoDB, Mongoose, React and Git.
+            experience and considerable knowledge about ES6, React and Git.
           </div>
-          <br/>
-          <div className="more">
+          <br />
+          <div className="more " >
             <div className="headtext">Education</div>
+            <div className="eduFlex">
             <div className="details edu">
               <p>Full Stack Web Developer</p>
               <p>Masai School, Bengaluru</p>
               <p>Sept 2021 - Present</p>
             </div>
-            
-            <div className="details edu">
+
+            <div className="details edu edu2">
               <p>BE Mechanical Engineering</p>
               <p>Acharya Institutes of Technology, Bengaluru</p>
               <p>Aug 2013 - 2017</p>
             </div>
+            </div>
+            
           </div>
         </div>
         <div className="imageme">

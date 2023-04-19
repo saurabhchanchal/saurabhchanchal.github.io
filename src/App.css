@@ -1,64 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
-html{
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap");
+html {
   scroll-behavior: smooth;
-   
 }
-  .techImg:hover{
-   transform: scale(1.1);
-   transition: 0.5s;
- }
- .projs:hover{
+.techImg:hover {
   transform: scale(1.1);
-  transition: .5s;
+  transition: 0.5s;
 }
-*{
+.projs:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.App{
+.App {
   background-color: rgb(54, 52, 52);
   min-height: 100vh;
 }
 /* nav component */
-.navbar{
+.navbar {
   display: flex;
   justify-content: space-between;
   padding: 0.5rem 1.3rem;
   color: #ffff;
   font-size: 1.5rem;
   z-index: 100;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #333333;
 }
-ul{
+ul {
   list-style: none;
   display: flex;
   justify-content: space-around;
 }
-li, .logo{
+li,
+.logo {
   margin: 0.5rem;
   cursor: pointer;
 }
-.menu{
+.menu {
   display: flex;
 }
-.socials{
+.socials {
   margin-left: 1.3rem;
   background-color: grey;
   padding: 3px 30px;
   border-radius: 20px;
-
 }
-.links, a{
+.links,
+a {
   color: #fff;
   text-decoration: none;
 }
-.links:hover{
+.links:hover {
   color: #7ee8fa;
 }
-.links:focus{
+.links:focus {
   color: #7ee8fa;
 }
-.resume{
+.resume {
   margin-top: 0;
   padding: 0.2rem;
   border: 1px solid #75b3be;
@@ -69,18 +73,18 @@ li, .logo{
 }
 
 /* home component */
-.home{
+.home {
   color: #ffff;
   display: flex;
   justify-content: space-between;
   z-index: 0;
   min-height: 100vh;
 }
-.main{
-  margin: 20vh 0 0 5rem;;
+.main {
+  margin: 20vh 0 0 5rem;
   z-index: 80;
 }
-.image{
+.image {
   z-index: 0;
   position: absolute;
   right: 0;
@@ -88,28 +92,39 @@ li, .logo{
   width: 50%;
   object-fit: contain;
 }
-.intro .text, .intro2 .text, .Bottom .free .txthead, .techstacks .intro, .aboutmeintro, .contsmes{
-  font-family: 'Lobster Two', cursive;
+.intro .text,
+.intro2 .text,
+.Bottom .free .txthead,
+.techstacks .intro,
+.aboutmeintro,
+.contsmes,
+.head {
+  font-family: "Lobster Two", cursive;
   font-size: 4rem;
   color: #fff;
   background-color: #eec0c6;
- background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+  background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.contsmes{
+.contsmes {
   font-size: 30px;
 }
-.intro2 .text, .contsmes{
-  background-image: radial-gradient( circle 780.6px at 10% 20%,  rgba(133,255,189,1) 0%, rgba(255,251,125,1) 90.7% );
+.intro2 .text,
+.contsmes {
+  background-image: radial-gradient(
+    circle 780.6px at 10% 20%,
+    rgba(133, 255, 189, 1) 0%,
+    rgba(255, 251, 125, 1) 90.7%
+  );
 }
-.tagline{
+.tagline {
   margin-top: 1.3rem;
   color: rgb(168, 158, 158);
   font-size: 1.2rem;
 }
-.button{
+.button {
   margin-top: 1.4rem;
   padding: 0.8rem;
   border: 1px solid #75b3be;
@@ -119,139 +134,118 @@ li, .logo{
   font-size: 1.2rem;
   cursor: pointer;
 }
-.button:hover{
+.button:hover {
   background-color: #2d3638c2;
   transition: all 0.3s ease-in-out;
 }
-.button a{
+.button a {
   color: #75b3be;
 }
 /* mobile */
-.mobile-menu{
+.mobile-menu {
   display: none;
 }
 
 /* about component */
-.About{
+.About {
   margin: 10vh 5vh;
   color: #fff;
   display: flex;
   justify-content: space-around;
 }
-.imageme img{
+.imageme img {
   object-fit: contain;
   border-radius: 8px;
 }
-.abouttext{
+.abouttext {
   margin: 0 3rem;
 }
-.aboutmeintro{
+.aboutmeintro {
   margin: 0 5vh;
   color: white;
   font-size: 3rem;
-  font-family: 'Lobster Two', cursive;
+  font-family: "Lobster Two", cursive;
 }
-.abouttext .headtext{
+.abouttext .headtext {
   margin-bottom: 1.5rem;
   font-size: 1.8rem;
 }
-.abouttext .details, .abouttext .more{
+.abouttext .details,
+.abouttext .more {
   line-height: 1.4;
   margin-bottom: 1rem;
 }
-.Tech{
+.Tech {
   color: #fff;
   min-height: 50vh;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
+  border: 1px soliod white;
 }
-.techstacks .intro{
+.techstacks .intro {
   margin-bottom: 1rem;
   font-size: 3rem;
 }
-.techstacks .techs{
+.techstacks .techs {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 30px;
-  
 }
-.techstacks .techs .row div{
+.techstacks .techs .row div {
   line-height: 1.4rem;
   font-size: 1rem;
 }
 
-/* bottomabout */
-.Bottom{
-  color: #fff;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-.Bottom .free .txthead{
-  font-size: 4.5rem;
-  margin-bottom: 1rem;
-}
-.Bottom .free .txt{
-  font-size: 1.3rem;
-  line-height: 1.5;
-}
-.Bottom .free .txt a{
-  text-decoration: underline #eec0c6 4px;
-}
-
 /* project */
-.Project{
+.Project {
   font-size: 2rem;
   color: #fff;
 }
-.Project .head{
+.Project .head {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.Project .head .projectsIntro{
+.Project .head .projectsIntro {
   color: rgb(255, 255, 255);
   font-size: 1.2rem;
   margin-top: 0.5rem;
 }
-.Project .container{
+.Project .container {
   display: grid;
   grid-template-columns: repeat(2, auto);
 }
-.Project .container .projs{
+.Project .container .projs {
   margin: 2rem 3rem;
   padding-bottom: 1rem;
   border-radius: 6px;
   box-shadow: 3px 3px 10px #383737d5;
 }
-.Project .container .projs img{
+.Project .container .projs img {
   object-fit: contain;
   width: 100%;
 }
-.Project .container .projs .title{
+.Project .container .projs .title {
   font-size: 1.5rem;
   padding: 0.5rem;
 }
-.Project .container .projs .projinfo{
+.Project .container .projs .projinfo {
   font-size: 1rem;
   color: rgb(255, 255, 255);
   padding: 0.2rem 0.5rem;
 }
-.Project a{
+.Project a {
   margin: 0.6rem;
   border: 1px solid #75b3be;
   padding: 0.5rem;
   font-size: 1rem;
 }
-.Project a:hover{
+.Project a:hover {
   background-color: #75b3be;
   transition: all 0.5s ease;
 }
-.Project .moreprojs{
+.Project .moreprojs {
   font-size: 1.5rem;
   text-align: center;
   color: grey;
@@ -259,60 +253,83 @@ li, .logo{
   line-height: 2;
 }
 /* conatcts */
-.Contact{
+.Contact {
   color: #fff;
   font-size: 2rem;
   display: flex;
   justify-content: center;
   align-self: center;
 }
-.contactimg img{
+.contactimg img {
   height: 350px;
   width: 350px;
   border-radius: 13px;
   object-fit: cover;
 }
-.name, .prof{
+.name,
+.prof {
   text-align: center;
 }
-.name{
+.name {
   font-weight: 800;
 }
-.prof{
+.prof {
   font-size: 1.8rem;
   font-weight: 400;
 }
-.conlinks{
+.conlinks {
   display: flex;
 }
-.conlinks div{
+.conlinks div {
   margin: 5px;
   font-size: 1.5rem;
   font-weight: 200;
 }
-.conlinks div a{
+.conlinks div a {
   color: rgb(0, 204, 255);
   text-decoration: underline;
 }
 
+/* bottomabout */
+.Bottom {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.Bottom .free .txthead {
+  font-size: 4.5rem;
+  margin-bottom: 1rem;
+}
+.Bottom .free .txt {
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+.Bottom .free .txt a {
+  text-decoration: underline #eec0c6 4px;
+}
+
 /* form */
-form{
+form {
   margin-top: 1rem;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-.labels{
+.labels {
   display: flex;
   justify-content: space-around;
 }
-label{
+label {
   font-size: 20px;
 }
-form input, form label, form button{
+form input,
+form label,
+form button {
   margin-bottom: 10px;
 }
-form input{
+form input {
   border: 2px solid gray;
   color: white;
   border-radius: 10px;
@@ -321,10 +338,10 @@ form input{
   background: transparent;
   margin: 0 10px;
 }
-form input:focus{
+form input:focus {
   border-color: #7ee8fa;
 }
-textarea{
+textarea {
   color: #fff;
   background: none;
   font-size: 16px;
@@ -334,66 +351,141 @@ textarea{
   width: 30rem;
   height: 10rem;
 }
-form button{
+form button {
   border: none;
   padding: 10px;
   margin-top: 10px;
   border-radius: 8px;
   font-size: 1.5rem;
-  background-image: radial-gradient( circle 780.6px at 10% 20%,  rgba(133,255,189,1) 0%, rgba(255,251,125,1) 90.7% );;
+  background-image: radial-gradient(
+    circle 780.6px at 10% 20%,
+    rgba(133, 255, 189, 1) 0%,
+    rgba(255, 251, 125, 1) 90.7%
+  );
   width: 20rem;
   color: black;
 }
-.center{
+.center {
   text-align: center;
 }
 
 /* blog */
-.blogs{
+.blogs {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 1rem;
 }
-.blogs .container{
+.blogs .container {
   width: 400px;
   margin: 1rem;
 }
-.blogs .container .text-container{
+.blogs .container .text-container {
   background-color: grey;
   color: white;
   padding: 10px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-.blogs .container .text-container .title{
+.blogs .container .text-container .title {
   font-size: 1.6rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
-.blogs .container .text-container .desc{
+.blogs .container .text-container .desc {
   margin-bottom: 0.7rem;
 }
-.blogs .container .text-container .autcal{
+.blogs .container .text-container .autcal {
   color: rgb(255, 215, 215);
 }
-.blogs .container img{
+.blogs .container img {
   border-start-start-radius: 20px;
   border-start-end-radius: 20px;
   width: 400px;
   height: 300px;
 }
 
+/* ----------Techs---------- */
+.techs > .techImg {
+  width: 150px;
+  height: 150px;
+  padding: 5px;
 
+  margin-bottom: 40px;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.techImg > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.techImg > p {
+  text-align: center;
+  font-size: 19px;
+  font-family: sans-serif;
+  margin-top: 5px;
+}
+.flex {
+  display: flex;
+}
+.edu {
+  line-height: 10px;
+}
+
+.backEdu {
+  width: 100%;
+}
+
+.edu > p:nth-child(1) {
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.details {
+  line-height: 16px;
+  font-size: 17px;
+}
+
+/* ---------------------calander------------------------- */
+
+.calander {
+  display: flex;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.cal {
+  flex: 1 1 100%;
+  max-width: 100%;
+  margin-left: 20%;
+}
+
+.stacks {
+  flex: 1 1 100%;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.stacks p {
+  margin: 10px;
+}
 
 /* media queries for nav and home components */
 @media screen and (max-width: 600px) {
   /* navbar */
-  .navbar{
+  .navbar {
     padding: 0.5rem;
   }
- 
-  .menu{
+
+  .menu {
     width: 80%;
     height: 100vh;
     position: absolute;
@@ -402,14 +494,14 @@ form button{
     transition: all 0.5s ease-out;
     flex-direction: column;
   }
-  .menu .navvs{
+  .menu .navvs {
     display: block;
     text-align: center;
   }
-  .menu .navvs li{
+  .menu .navvs li {
     margin: 3rem;
   }
-  .menu.active{
+  .menu.active {
     background-color: #111;
     left: 0;
     opacity: 1;
@@ -417,102 +509,311 @@ form button{
     z-index: 100;
     align-content: center;
   }
-  .mobile-menu{
+  .mobile-menu {
     display: block;
   }
   /* home */
-  .home{
+  .home {
     min-height: 100vh;
   }
-  .intro .text, .intro2 .text{
+  .intro .text,
+  .intro2 .text {
     font-size: 2.5rem;
   }
-  .intro{
+  .intro {
     width: 300px;
   }
-  .main{
-    margin: 10vh 0 0 2rem
+  .main {
+    margin: 10vh 0 0 2rem;
   }
-  .image{
+  .image {
     width: 100%;
+    padding-top: 10px;
+    margin-top: 40px;
   }
   /* about */
-  .About{
+  .About {
     display: block;
     margin: 5vh 1vh;
   }
-  
-  .imageme >img{
-    width: 100%;
+  .imageme {
+    align-items: center;
+    text-align: center;
+  }
+
+  .imageme > img {
+    width: 90%;
+    text-align: center;
 
     border-radius: 8px;
   }
 
-  .abouttext{
+  .abouttext {
     margin: 0 2rem;
   }
-  .abouttext .techstacks .techs{
+  .abouttext .techstacks .techs {
     width: 100%;
-  }
-  .button{
-    padding: 0.7rem;
-  }
-  /* Project */
-  .Project .container{
-    display: block;
-  }
-  .Project .head .projectsIntro{
+    align-items: center;
     text-align: center;
   }
-  textarea{
+  .button {
+    padding: 0.35rem;
+    margin-bottom: 20px;
+  }
+  /* Project */
+  .Project .container {
+    display: block;
+  }
+  .Project .head .projectsIntro {
+    text-align: center;
+  }
+  textarea {
     width: 19rem;
   }
-  .Tech >.techstacks>.techs{
-    grid-template-columns: repeat(1,1fr);
-    /* align-content: space-around; */
-    /* justify-content: center; */
-    margin-left: 15px;
+  .Tech > .techstacks > .techs {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+    align-items: center;
+    margin-left: 25px;
+    margin: auto;
   }
- 
+
+  .techImg {
+    margin: auto;
+  }
+  .techstacks {
+    width: 90%;
+    text-align: center;
+  }
+  .intro {
+    margin: auto;
+  }
+
+  /*------------------ calander---------------- */
+  .calander {
+    flex-direction: column;
+    padding: 10px;
+  }
+  
+  .cal {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+  
+  .stacks {
+    margin-top: 10px;
+  }
+  
+  .stacks p {
+    margin: 5px;
+  }
+  .stats {
+    width: 86%;
+    height: 200px;
+    margin-left: 12px;
+  }
   
 }
 
+/* ---------------------------------------------------------------------------------- */
 
-.techs>.techImg{
-  width: 150px;
-  height: 150px;
-  padding: 5px;
-  margin-bottom: 40px;
-  border-radius: 20px;
-  background-color: white;
-  
-}
- /* #techs> .techImg{
-  width: 100%;
-  border-radius: 30px;
-} */
-.techImg > img{
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-}
-.techImg > p{
-  text-align: center;
-  font-size: 19px;
-  font-family: sans-serif;
-  margin-top: 5px;
-}
-.flex{
-  display: flex;
-}
-.edu{
-  font-family: sans-serif;
-  width:35%;
-  
-  line-height: 10px;
+/* ----------for iPad Mini-------------------------  */
+@media screen and (min-width: 601px) and (max-width: 768px) {
+  .navbar {
+    padding: 0.75rem;
+  }
+
+  .menu {
+    width: 70%;
+    height: 100vh;
+    position: absolute;
+    left: -100%;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+    flex-direction: column;
+  }
+  .menu .navvs {
+    display: block;
+    text-align: center;
+  }
+  .menu .navvs li {
+    margin: 3.5rem;
+  }
+  .menu.active {
+    background-color: #111;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease-in;
+    z-index: 100;
+    align-content: center;
+  }
+  .mobile-menu {
+    display: block;
+  }
+
+  .home {
+    min-height: 100vh;
+  }
+  .intro .text,
+  .intro2 .text {
+    font-size: 3rem;
+  }
+  .intro {
+    width: 400px;
+  }
+  .main {
+    margin: 12vh 0 0 4rem;
+  }
+  .image {
+    width: 100%;
+    padding-top: 20px;
+    margin-top: 50px;
+  }
+
+  .About {
+    display: block;
+    margin: 7vh 2vh;
+  }
+
+  .details {
+    font-size: 23px;
+  }
+  .more {
+    font-size: 23px;
+  }
+
+  .eduFlex {
+    display: flex;
+    padding: 2px;
+    margin: 3px;
+  }
+  .edu2 {
+    margin-left: 24px;
+  }
+
+  .Project .container .projs .title {
+    font-size: 1.8rem;
+    color: #75b3be;
+    padding: 0.5rem;
+  }
+
+  .Project .container .projs .projinfo {
+    font-size: 1.27rem;
+    color: rgb(255, 255, 255);
+    padding: 0.2rem 0.5rem;
+  }
+
+  .imageme {
+    align-items: center;
+    text-align: center;
+  }
+
+  .imageme > img {
+    width: 80%;
+    text-align: center;
+    border-radius: 8px;
+  }
+
+  .abouttext {
+    margin: 0 3rem;
+  }
+  .abouttext .techstacks .techs {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .button {
+    padding: 0.5rem;
+    margin-bottom: 25px;
+  }
+  .Project .container {
+    display: block;
+  }
+  .Project .head .projectsIntro {
+    text-align: center;
+  }
+  textarea {
+    width: 25rem;
+  }
+  .Tech > .techstacks > .techs {
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin: auto;
+  }
+  .techImg {
+    margin: auto;
+  }
+  .techstacks {
+    width: 90%;
+    text-align: center;
+  }
+  .intro {
+    margin: auto;
+  }
+
+  .Bottom .free .txthead {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .Bottom .free .txt {
+    font-size: 1rem;
+    line-height: 1.3;
+    padding: 0 1rem;
+  }
+
+  .Bottom {
+    padding: 2rem;
+  }
+  .Bottom .free .txthead {
+    font-size: 3rem;
+  }
+  .Bottom .free .txt {
+    font-size: 1rem;
+  }
+  form input,
+  form label,
+  form button {
+    margin-bottom: 5px;
+  }
+  form input {
+    font-size: 16px;
+    margin: 0 5px;
+  }
+  textarea {
+    font-size: 14px;
+    width: 80%;
+    height: 8rem;
+  }
+  form button {
+    font-size: 1.2rem;
+    width: 15rem;
+  }
+  /*-------------- calander ---------------------------- */
+  .cal {
+    flex: 1 1 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    width: 80%;
+    height: auto;
+  }
+
+  .stacks {
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin: 20px auto;
+  }
+
+  .stacks p {
+    margin: 10px 5px;
+  }
 }
 
-.edu>p:nth-child(1){
-  font-size: 20px;
-  line-height: 25px;
-}
+/* -------------------------------------------------------------------------------- */
+
+
+
