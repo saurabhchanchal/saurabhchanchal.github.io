@@ -15,12 +15,14 @@ function Nav() {
 
   const downloadResume = () => {
     const downloadLink = document.createElement("a");
-    downloadLink.href = "https://drive.google.com/file/d/17-aIEy7eq4slHfBBSnvzY4C80CXEMLVw/view?usp=sharing";
+    downloadLink.href =
+      "https://drive.google.com/file/d/1gzUX5QYyHyALRCl5ho4yoY6FIMCLpgq6/view?usp=share_link";
     downloadLink.download = "Saurabha_Rai_Resume.pdf";
-    document.body.appendChild(downloadLink);
     downloadLink.click();
-    document.body.removeChild(downloadLink);
-    };
+    window.open(
+      "https://drive.google.com/file/d/1gzUX5QYyHyALRCl5ho4yoY6FIMCLpgq6/view?usp=share_link"
+    );
+  };
 
   return (
     <div className="navbar">
@@ -44,14 +46,8 @@ function Nav() {
             <a href="#bottom">Contact</a>{" "}
           </li>
 
-          <li className="navvs" onClick={() => { closeMobileMenu(); downloadResume(); }}>
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href={
-                "https://drive.google.com/file/d/17-aIEy7eq4slHfBBSnvzY4C80CXEMLVw/view?usp=sharing"
-              }
-            >
+          <li className="navvs">
+            <a onClick={downloadResume} target="_blank" rel="noreferrer">
               Resume
             </a>
           </li>

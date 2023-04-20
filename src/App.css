@@ -479,7 +479,7 @@ form button {
 }
 
 /* media queries for nav and home components */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 667px) {
   /* navbar */
   .navbar {
     padding: 0.5rem;
