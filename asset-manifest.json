@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a02d7c9b.css",
-    "main.js": "/static/js/main.1f41167e.js",
+    "main.css": "/static/css/main.be39baaa.css",
+    "main.js": "/static/js/main.b9cc407c.js",
     "static/js/787.cb4be3de.chunk.js": "/static/js/787.cb4be3de.chunk.js",
     "static/media/MasaiPlatform.png": "/static/media/MasaiPlatform.c8d0a35d2b7ff8fffe34.png",
     "static/media/ApploImg.png": "/static/media/ApploImg.c88f06f38cc8d9ab8482.png",
@@ -23,12 +23,12 @@
     "static/media/npm.svg": "/static/media/npm.4ae99ecf9272452adda8c8ef1841f760.svg",
     "static/media/material-ui.svg": "/static/media/material-ui.741a52f5f54e0b6073e48671571738ea.svg",
     "index.html": "/index.html",
-    "main.a02d7c9b.css.map": "/static/css/main.a02d7c9b.css.map",
-    "main.1f41167e.js.map": "/static/js/main.1f41167e.js.map",
+    "main.be39baaa.css.map": "/static/css/main.be39baaa.css.map",
+    "main.b9cc407c.js.map": "/static/js/main.b9cc407c.js.map",
     "787.cb4be3de.chunk.js.map": "/static/js/787.cb4be3de.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a02d7c9b.css",
-    "static/js/main.1f41167e.js"
+    "static/css/main.be39baaa.css",
+    "static/js/main.b9cc407c.js"
   ]
 }
