@@ -6,7 +6,7 @@ function Home() {
     <div className="home">
       <div className="main">
         <div className="intro">
-          <div className="text">Hi I'm Saurbha Kumar Rai</div>
+          <div className="text">Hi I am Saurbha Kumar Rai</div>
         </div>
         <div className="intro2">
           <div className="text">Full Stack MERN <div> Developer</div></div>

@@ -7,7 +7,7 @@ import {
   FaBars,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import  Saurabh from "./resume/Saurabh.pdf";
+import Saurabh from "./resume/Saurabha_Resume.pdf";
 
 function Nav() {
   const [click, setClick] = useState(false);
@@ -16,11 +16,11 @@ function Nav() {
 
   const downloadResume = () => {
     const downloadLink = document.createElement("a");
-    downloadLink.href = Saurabh
+    downloadLink.href = Saurabh;
     downloadLink.download = "Saurabha_Rai_Resume.pdf";
     downloadLink.click();
     window.open(
-      "https://drive.google.com/file/d/1gzUX5QYyHyALRCl5ho4yoY6FIMCLpgq6/view?usp=share_link"
+      "https://drive.google.com/file/d/1wYtpPLLKPw1hkELzem2ya1aqSs69-RDv/view?usp=share_link"
     );
   };
 

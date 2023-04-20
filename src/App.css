@@ -310,6 +310,46 @@ a {
   text-decoration: underline #eec0c6 4px;
 }
 
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.git_port {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.git_port li {
+  margin-right: 16px;
+}
+
+.git, .port {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #f1f1f1;
+}
+
+.git:hover, .port:hover {
+  background-color: #333;
+}
+
+.git svg, .port svg {
+  width: 24px;
+  height: 24px;
+  fill: #333;
+}
+
+
+
+
 /* form */
 form {
   margin-top: 1rem;

@@ -10,7 +10,7 @@ function About() {
       <div className="About">
         <div className="abouttext">
           <div className="headtext">
-            I'm Saurabha Kumar Rai,
+            I am Saurabha Kumar Rai,
             <div>A Full Stack MERN Developer</div>
           </div>
           <div className="details">
