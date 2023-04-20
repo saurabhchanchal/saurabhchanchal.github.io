@@ -479,7 +479,7 @@ form button {
 }
 
 /* media queries for nav and home components */
-@media screen and (max-width: 667px) {
+@media screen and (max-width: 668px) {
   /* navbar */
   .navbar {
     padding: 0.5rem;
@@ -618,7 +618,7 @@ form button {
 /* ---------------------------------------------------------------------------------- */
 
 /* ----------for iPad Mini-------------------------  */
-@media screen and (min-width: 601px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .navbar {
     padding: 0.75rem;
   }

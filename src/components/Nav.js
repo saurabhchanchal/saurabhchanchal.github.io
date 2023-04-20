@@ -7,6 +7,7 @@ import {
   FaBars,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import  Saurabh from "./resume/Saurabh.pdf";
 
 function Nav() {
   const [click, setClick] = useState(false);
@@ -15,8 +16,7 @@ function Nav() {
 
   const downloadResume = () => {
     const downloadLink = document.createElement("a");
-    downloadLink.href =
-      "https://drive.google.com/file/d/1gzUX5QYyHyALRCl5ho4yoY6FIMCLpgq6/view?usp=share_link";
+    downloadLink.href = Saurabh
     downloadLink.download = "Saurabha_Rai_Resume.pdf";
     downloadLink.click();
     window.open(

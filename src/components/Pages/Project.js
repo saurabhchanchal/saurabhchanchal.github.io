@@ -38,11 +38,6 @@ function Project() {
                 Live
               </a>
             </div>
-            <div className="projlinks">
-              <a href="https://github.com/masai-builds/Team5" target={"_blank"}>
-                GitHub
-              </a>
-            </div>
           </div>
         </div>
 
@@ -65,14 +60,6 @@ function Project() {
             <div className="projlinks">
               <a href="http://35.178.251.86:8080/" target={"_blank"}>
                 Live
-              </a>
-            </div>
-            <div className="projlinks">
-              <a
-                href="https://github.com/masai-builds/Team5_Frontend"
-                target={"_blank"}
-              >
-                GitHub
               </a>
             </div>
           </div>
