@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.be39baaa.css",
-    "main.js": "/static/js/main.b9cc407c.js",
+    "main.css": "/static/css/main.72012b8f.css",
+    "main.js": "/static/js/main.c7705c0f.js",
     "static/js/787.cb4be3de.chunk.js": "/static/js/787.cb4be3de.chunk.js",
     "static/media/MasaiPlatform.png": "/static/media/MasaiPlatform.c8d0a35d2b7ff8fffe34.png",
     "static/media/ApploImg.png": "/static/media/ApploImg.c88f06f38cc8d9ab8482.png",
     "static/media/bestBuy.png": "/static/media/bestBuy.c5b7e3800fc1ff68e4a2.png",
     "static/media/saurabhprofile.png": "/static/media/saurabhprofile.ac0b5a5e75804d8687c6.png",
     "static/media/Gradigi.png": "/static/media/Gradigi.52bb6d52e0d088ae83e2.png",
-    "static/media/Saurabh.pdf": "/static/media/Saurabh.75ad0ecc31e15813ca95.pdf",
+    "static/media/Saurabha_Resume.pdf": "/static/media/Saurabha_Resume.9f9c84776c423c0b03fb.pdf",
     "static/media/programmer.png": "/static/media/programmer.ba704ff77e39094aa378.png",
     "static/media/create-react-app.svg": "/static/media/create-react-app.557dcd9a4b161f2097a887c6cd455f04.svg",
     "static/media/mongodb.svg": "/static/media/mongodb.153b7b440efa05666029a47da0d0baa0.svg",
@@ -23,12 +23,12 @@
     "static/media/npm.svg": "/static/media/npm.4ae99ecf9272452adda8c8ef1841f760.svg",
     "static/media/material-ui.svg": "/static/media/material-ui.741a52f5f54e0b6073e48671571738ea.svg",
     "index.html": "/index.html",
-    "main.be39baaa.css.map": "/static/css/main.be39baaa.css.map",
-    "main.b9cc407c.js.map": "/static/js/main.b9cc407c.js.map",
+    "main.72012b8f.css.map": "/static/css/main.72012b8f.css.map",
+    "main.c7705c0f.js.map": "/static/js/main.c7705c0f.js.map",
     "787.cb4be3de.chunk.js.map": "/static/js/787.cb4be3de.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.be39baaa.css",
-    "static/js/main.b9cc407c.js"
+    "static/css/main.72012b8f.css",
+    "static/js/main.c7705c0f.js"
   ]
 }
