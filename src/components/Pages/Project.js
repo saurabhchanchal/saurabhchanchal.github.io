@@ -34,7 +34,7 @@ function Project() {
           </div>
           <div className="flex">
             <div className="projlinks">
-              <a href="13.233.22.43:3000" target={"_blank"}>
+              <a href="https://www.masaischool.com/learn/tutorials" target={"_blank"}>
                 Live
               </a>
             </div>
@@ -84,7 +84,7 @@ function Project() {
           <div className="flex">
             <div className="projlinks">
               <a
-                href="https://merry-kitten-8e2680.netlify.app/"
+                href="https://roaring-cassata-209e07.netlify.app/"
                 target={"_blank"}
               >
                 Live
@@ -92,7 +92,7 @@ function Project() {
             </div>
             <div className="projlinks">
               <a
-                href="https://github.com/paruljamwal/Backend-best-buy-repo"
+                href="https://github.com/saurabhchanchal/Backend-best-buy-repo"
                 target={"_blank"}
               >
                 GitHub
@@ -163,7 +163,8 @@ function Project() {
           </p>
           <p>
             &nbsp;
-            <img className="stats"
+            <img
+              className="stats"
               align="center"
               src="https://github-readme-stats.vercel.app/api?username=saurabhchanchal&show_icons=true&locale=en"
               alt="saurabhchanchal"
